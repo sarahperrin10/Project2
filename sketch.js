@@ -44,7 +44,7 @@ function draw (){
     xdirection1 *= -1;
     newColor = color(random(255),random(255),random(255));
     fill (newColor);
-    s = new Square ((width / 2), (height / 2), 70, 70);
+    s = new Square ((width/2), (height/2), 70, 70);
     sq.push(s); 
     c = new Circle ((random(width)), (random(height)), (circle.width/5), (circle.height/5)); 
     ci.push(c);
@@ -54,7 +54,7 @@ function draw (){
     ydirection1 *= -1;
     newColor = color(random(255),random(255),random(255));
     fill (newColor);
-    s = new Square ((width / 2), (height / 2), 70, 70);
+    s = new Square ((width/2), (height/2), 70, 70);
     sq.push(s); 
     c = new Circle ((random(width)), (random(height)), (circle.width/6.5), (circle.height/6.5)); 
     ci.push(c);
