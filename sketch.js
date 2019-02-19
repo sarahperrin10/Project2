@@ -1,5 +1,6 @@
 
-let sign;
+let packman;
+let ghost;
 let circle;
 let sq = [];
 let s;
@@ -19,7 +20,8 @@ let xdirection1 = 1;
 let ydirection1 = 1; 
 
 function preload(){
-  sign = loadImage ('images/sign.jpg');
+  packman = loadImage ('images/packman.png');
+  ghost= loadImage ('images/ghost.png');
   circle = loadImage ('images/circle.png');
 }
 
@@ -75,7 +77,7 @@ function draw (){
   if (mouseIsPressed){
     xspeed1 = 7.8;
     yspeed1 = 7.2;
-    image (sign, xpos, ypos, 80, 80);
+    image (packman, xpos, ypos, packman.width/7, packman.height/7);
   }  
 }
 
@@ -117,7 +119,7 @@ class Square {
   if (mouseIsPressed){
     this.xspeed = 7.8;
     this.yspeed = 7.2;
-    image (sign, this.x, this.y, 80, 80);
+    image (ghost, this.x, this.y, ghost.width/3, ghost.height/3);
   }
 }
 
